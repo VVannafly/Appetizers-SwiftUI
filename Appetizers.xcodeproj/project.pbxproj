@@ -22,6 +22,7 @@
 		0A3E858926208E390056102D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858826208E390056102D /* Alert.swift */; };
 		0A3E858D262096AE0056102D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858C262096AE0056102D /* LoadingView.swift */; };
 		0A3E85902620977C0056102D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858F2620977C0056102D /* Color+Extensions.swift */; };
+		0A3E85932620AEC40056102D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E85922620AEC40056102D /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0A3E858826208E390056102D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0A3E858C262096AE0056102D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0A3E858F2620977C0056102D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0A3E85922620AEC40056102D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				0A3E858826208E390056102D /* Alert.swift */,
 				0A3E858C262096AE0056102D /* LoadingView.swift */,
 				0A3E858F2620977C0056102D /* Color+Extensions.swift */,
+				0A3E85922620AEC40056102D /* RemoteImage.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				0A3E85802620713B0056102D /* NetworkManager.swift in Sources */,
 				0A3E85902620977C0056102D /* Color+Extensions.swift in Sources */,
 				0A3E856026205B370056102D /* AppetizersApp.swift in Sources */,
+				0A3E85932620AEC40056102D /* RemoteImage.swift in Sources */,
 				0A3E8583262072750056102D /* NetworkError.swift in Sources */,
 				0A3E858926208E390056102D /* Alert.swift in Sources */,
 				0A3E857126205C370056102D /* AppetizerListView.swift in Sources */,
