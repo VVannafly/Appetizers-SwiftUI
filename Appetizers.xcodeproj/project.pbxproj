@@ -18,6 +18,10 @@
 		0A3E857D26206FF40056102D /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E857C26206FF40056102D /* AppetizerListCell.swift */; };
 		0A3E85802620713B0056102D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E857F2620713B0056102D /* NetworkManager.swift */; };
 		0A3E8583262072750056102D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8582262072750056102D /* NetworkError.swift */; };
+		0A3E858626207C060056102D /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858526207C060056102D /* AppetizerListViewModel.swift */; };
+		0A3E858926208E390056102D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858826208E390056102D /* Alert.swift */; };
+		0A3E858D262096AE0056102D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858C262096AE0056102D /* LoadingView.swift */; };
+		0A3E85902620977C0056102D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E858F2620977C0056102D /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		0A3E857C26206FF40056102D /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		0A3E857F2620713B0056102D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0A3E8582262072750056102D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		0A3E858526207C060056102D /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		0A3E858826208E390056102D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0A3E858C262096AE0056102D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0A3E858F2620977C0056102D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 				0A3E856126205B370056102D /* AppetizerTabView.swift */,
 				0A3E8579262068050056102D /* Appetizer.swift */,
 				0A3E857026205C370056102D /* AppetizerListView.swift */,
+				0A3E858526207C060056102D /* AppetizerListViewModel.swift */,
 				0A3E857C26206FF40056102D /* AppetizerListCell.swift */,
 				0A3E857326205C410056102D /* AccountView.swift */,
 				0A3E857626205C4A0056102D /* OrderView.swift */,
@@ -78,6 +87,9 @@
 				0A3E856526205B3A0056102D /* Preview Content */,
 				0A3E857F2620713B0056102D /* NetworkManager.swift */,
 				0A3E8582262072750056102D /* NetworkError.swift */,
+				0A3E858826208E390056102D /* Alert.swift */,
+				0A3E858C262096AE0056102D /* LoadingView.swift */,
+				0A3E858F2620977C0056102D /* Color+Extensions.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -162,10 +174,14 @@
 				0A3E857A262068050056102D /* Appetizer.swift in Sources */,
 				0A3E857D26206FF40056102D /* AppetizerListCell.swift in Sources */,
 				0A3E857426205C410056102D /* AccountView.swift in Sources */,
+				0A3E858626207C060056102D /* AppetizerListViewModel.swift in Sources */,
 				0A3E856226205B370056102D /* AppetizerTabView.swift in Sources */,
+				0A3E858D262096AE0056102D /* LoadingView.swift in Sources */,
 				0A3E85802620713B0056102D /* NetworkManager.swift in Sources */,
+				0A3E85902620977C0056102D /* Color+Extensions.swift in Sources */,
 				0A3E856026205B370056102D /* AppetizersApp.swift in Sources */,
 				0A3E8583262072750056102D /* NetworkError.swift in Sources */,
+				0A3E858926208E390056102D /* Alert.swift in Sources */,
 				0A3E857126205C370056102D /* AppetizerListView.swift in Sources */,
 				0A3E857726205C4A0056102D /* OrderView.swift in Sources */,
 			);
