@@ -9,12 +9,12 @@ import SwiftUI
 
 struct AppetizerDetailView: View {
     
+    @Binding var isShowingDetail: Bool
     let appetizer: Appetizer
     
     var body: some View {
         VStack(spacing: 10) {
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225, alignment: .top)
             VStack {
@@ -28,73 +28,53 @@ struct AppetizerDetailView: View {
                 Spacer()
                 
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .font(.caption)
-                            .bold()
-                        Text("\(appetizer.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .font(.caption)
-                            .bold()
-                        Text("\(appetizer.carbs) g")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .font(.caption)
-                            .bold()
-                        Text("\(appetizer.protein) g")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: "\(appetizer.calories)")
+                    NutritionInfo(title: "Carbs", value: "\(appetizer.carbs) g")
+                    NutritionInfo(title: "Protein", value: "\(appetizer.protein) g")
                 }
             }
             Spacer()
             Button(action: {
                 
             },
-                   label: {
-                    Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .frame(width: 260, height: 50)
-                        .background(Color.brandPrimary)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                   }).padding(.bottom, 30)
+            label: {
+                AppetizerButton(title: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
+                })
+            .padding(.bottom, 30)
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay(Button(action: {
-            print("dismiss")
+            isShowingDetail = false
         }, label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                    .foregroundColor(.black)
-            }
+            xDismissButton()
         }), alignment: .topTrailing)
     }
+    
 }
 
 struct AppetizerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+        AppetizerDetailView(isShowingDetail: .constant(true), appetizer: MockData.sampleAppetizer)
+    }
+}
+
+struct NutritionInfo: View {
+    
+    let title: String
+    let value: String
+    
+    var body: some View {
+        VStack(spacing: 5) {
+            Text(title)
+                .font(.caption)
+                .bold()
+            Text(value)
+                .foregroundColor(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
     }
 }
